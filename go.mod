@@ -2,6 +2,4 @@ module github.com/pablonlr/bittrex
 
 go 1.17
 
-replace github.com/pablonlr/exchange => ../exchange
-
-require github.com/pablonlr/exchange v0.0.0-00010101000000-000000000000
+require github.com/pablonlr/exchange v0.0.0-20220506160913-a76198e0e96f
