@@ -22,8 +22,9 @@ type Client struct {
 	SECRET_KEY string
 }
 
-func NewClient(api_key, secret_key string) *Client {
+func NewClient(api_key, secret_key string, timeout time.Duration) *Client {
 	return &Client{
+		Client:     http.Client{Timeout: timeout},
 		API_KEY:    api_key,
 		SECRET_KEY: secret_key,
 	}
